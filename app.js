@@ -3,7 +3,7 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
-// require("./configurations/database"); //we are just importing the connection.
+const connection = require("./configurations/database"); //we are just importing the connection.
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
